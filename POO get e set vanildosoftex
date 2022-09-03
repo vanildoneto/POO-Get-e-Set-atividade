@@ -1,0 +1,16 @@
+class Nota():
+  def __init__(self, nota_aluno):
+    self.nota = nota_aluno
+
+    def get_nota_aluno(self):
+      return self.nota
+
+    def set_valor(self, nota_aluno):
+       self.nota = nota_aluno
+
+    nota = Nota(10)
+    print('Nota do aluno:', nota.get_valor())
+
+    val = int(input('Digite a nota do aluno:'))
+    nota.set_valor(val)
+    print('Nota do aluno após atribuição:', nota.get_valor())
